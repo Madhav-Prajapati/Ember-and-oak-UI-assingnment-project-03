@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ember &amp; Oak | Kitchen · Bar · Good Times</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-[#fbfaf8] font-['Inter',sans-serif] text-neutral-800 antialiased">
+
+  <header class="sticky top-0 z-50 bg-white">
+    <div class="mx-auto flex max-w-[80rem] items-center justify-between px-[1.5rem] py-[1rem] lg:px-[3rem]">
+
+      <a href="#home" class="block leading-none">
+        <span class="block text-[1.25rem] font-light tracking-[0.2em] text-neutral-900">EMBER &amp; OAK</span>
+        <span class="mt-[0.4rem] block text-[0.5rem] tracking-[0.25em] text-neutral-500">KITCHEN · BAR · GOOD TIMES</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="peer hidden" />
+      <label for="nav-toggle" class="cursor-pointer lg:hidden" aria-label="Toggle menu">
+        <svg class="h-[1.75rem] w-[1.75rem]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </label>
+
+      <nav class="absolute left-0 top-full hidden w-full flex-col items-center gap-[1.25rem] bg-white py-[1.5rem] shadow-md peer-checked:flex lg:static lg:flex lg:w-auto lg:flex-row lg:gap-[2.5rem] lg:bg-transparent lg:p-0 lg:shadow-none">
+        <a href="#home" class="border-b-[0.0625rem] border-neutral-900 pb-[0.25rem] text-[0.75rem] text-neutral-900">Home</a>
+        <a href="#menu" class="text-[0.75rem] text-neutral-600 transition hover:text-neutral-900">Menu</a>
+        <a href="#about" class="text-[0.75rem] text-neutral-600 transition hover:text-neutral-900">About</a>
+        <a href="#gallery" class="text-[0.75rem] text-neutral-600 transition hover:text-neutral-900">Gallery</a>
+        <a href="#contact" class="text-[0.75rem] text-neutral-600 transition hover:text-neutral-900">Contact</a>
+        <a href="#reserve" class="bg-neutral-900 px-[1.75rem] py-[0.9rem] text-[0.75rem] text-white transition hover:bg-neutral-700 lg:ml-[1rem]">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="relative flex min-h-[32rem] items-center overflow-hidden lg:min-h-[35rem]">
+      <img src="./public/salmon-hero.jpeg" alt="Pan-seared salmon with microgreens" class="absolute inset-0 h-full w-full object-cover object-[70%_center]" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/10"></div>
+
+      <div class="relative mx-auto w-full max-w-[80rem] px-[1.5rem] py-[4rem] lg:px-[3rem]">
+        <div class="max-w-[30rem]">
+          <p class="text-[0.7rem] tracking-[0.2em] text-white/90">GOOD FOOD. BETTER COMPANY.</p>
+          <h1 class="mt-[1.5rem] font-['Playfair_Display',serif] text-[2.5rem] font-normal leading-[1.1] text-white sm:text-[3.25rem]">
+            A Fresh Take<br />on Local Flavors
+          </h1>
+          <p class="mt-[1.5rem] max-w-[24rem] text-[0.85rem] leading-[1.7] text-white/90">
+            At Ember &amp; Oak, we serve thoughtfully crafted dishes made from the finest local ingredients. Whether it's a casual lunch or a special night out, our kitchen brings people together around great food.
+          </p>
+          <a href="#menu" class="mt-[2rem] inline-flex items-center gap-[0.75rem] bg-white px-[1.5rem] py-[0.9rem] text-[0.75rem] text-neutral-900 transition hover:bg-neutral-200">
+            View Our Menu
+            <svg class="h-[1rem] w-[1rem]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18m-6-6 6 6-6 6" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f4f2ee]">
+      <div class="mx-auto grid max-w-[80rem] grid-cols-1 gap-y-[2.5rem] px-[1.5rem] py-[3.5rem] sm:grid-cols-2 lg:grid-cols-4 lg:px-[3rem]">
+
+        <div class="flex flex-col items-center px-[1.5rem] text-center">
+          <svg class="h-[2rem] w-[2rem] text-neutral-800" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 21c0-9 5-16 15-17 0 10-6 16-15 17zM5 21l8-9" /></svg>
+          <h3 class="mt-[1.25rem] text-[0.7rem] tracking-[0.15em] text-neutral-800">FRESH INGREDIENTS</h3>
+          <p class="mt-[0.75rem] text-[0.75rem] text-neutral-500">Locally sourced, seasonally inspired.</p>
+        </div>
+
+        <div class="flex flex-col items-center px-[1.5rem] text-center lg:border-l-[0.0625rem] lg:border-neutral-300">
+          <svg class="h-[2rem] w-[2rem] text-neutral-800" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3v8a2 2 0 0 0 2 2v8M5 3v6M9 3v6M17 21V3c-2 1-3 4-3 8h3" /></svg>
+          <h3 class="mt-[1.25rem] text-[0.7rem] tracking-[0.15em] text-neutral-800">CRAFTED WITH CARE</h3>
+          <p class="mt-[0.75rem] text-[0.75rem] text-neutral-500">Every dish is made from scratch.</p>
+        </div>
+
+        <div class="flex flex-col items-center px-[1.5rem] text-center lg:border-l-[0.0625rem] lg:border-neutral-300">
+          <svg class="h-[2rem] w-[2rem] text-neutral-800" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3" /><circle cx="5" cy="10" r="2" /><circle cx="19" cy="10" r="2" /><path stroke-linecap="round" d="M6 20c0-3 3-5 6-5s6 2 6 5M1 18c0-2 2-3 4-3M23 18c0-2-2-3-4-3" /></svg>
+          <h3 class="mt-[1.25rem] text-[0.7rem] tracking-[0.15em] text-neutral-800">WARM ATMOSPHERE</h3>
+          <p class="mt-[0.75rem] text-[0.75rem] text-neutral-500">Good food brings people together.</p>
+        </div>
+
+        <div class="flex flex-col items-center px-[1.5rem] text-center lg:border-l-[0.0625rem] lg:border-neutral-300">
+          <svg class="h-[2rem] w-[2rem] text-neutral-800" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16l-8 9-8-9zM12 13v8M8 21h8" /></svg>
+          <h3 class="mt-[1.25rem] text-[0.7rem] tracking-[0.15em] text-neutral-800">CURATED DRINKS</h3>
+          <p class="mt-[0.75rem] text-[0.75rem] text-neutral-500">Relax with handcrafted cocktails and fine wines.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="menu" class="bg-[#fbfaf8]">
+      <div class="mx-auto grid max-w-[80rem] gap-[2.5rem] px-[1.5rem] py-[5rem] lg:grid-cols-[1fr_2.6fr] lg:items-center lg:gap-[3rem] lg:px-[3rem]">
+
+        <div>
+          <p class="text-[0.7rem] tracking-[0.2em] text-neutral-600">MENU HIGHLIGHTS</p>
+          <h2 class="mt-[1rem] font-['Playfair_Display',serif] text-[2rem] text-neutral-900">Signature Dishes</h2>
+          <p class="mt-[1.25rem] max-w-[18rem] text-[0.8rem] leading-[1.7] text-neutral-500">
+            From fresh seafood to wood-fired favorites, our menu is a celebration of bold flavors and simple ingredients.
+          </p>
+          <a href="#menu" class="mt-[2rem] inline-flex items-center gap-[0.6rem] border-b-[0.0625rem] border-neutral-900 pb-[0.15rem] text-[0.75rem] text-neutral-900">
+            Explore Full Menu
+            <svg class="h-[1rem] w-[1rem]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18m-6-6 6 6-6 6" /></svg>
+          </a>
+        </div>
+
+        <div class="grid gap-[1.5rem] sm:grid-cols-3">
+          <article>
+            <img src="./public/salmon-plate.jpeg" alt="Pan-Seared Salmon" class="aspect-[4/3] w-full object-cover sm:aspect-square" />
+            <h3 class="mt-[1rem] font-['Playfair_Display',serif] text-[1rem] text-neutral-900">Pan-Seared Salmon</h3>
+            <p class="mt-[0.4rem] text-[0.75rem] leading-[1.6] text-neutral-500">With lemon herb butter, seasonal vegetables and quinoa.</p>
+            <p class="mt-[0.75rem] text-[0.8rem] font-medium text-neutral-900">$18</p>
+          </article>
+
+          <article>
+            <img src="./public/mushroom-pasta.jpeg" alt="Truffle Mushroom Pasta" class="aspect-[4/3] w-full object-cover sm:aspect-square" />
+            <h3 class="mt-[1rem] font-['Playfair_Display',serif] text-[1rem] text-neutral-900">Truffle Mushroom Pasta</h3>
+            <p class="mt-[0.4rem] text-[0.75rem] leading-[1.6] text-neutral-500">Wild mushrooms, parmesan, white truffle oil.</p>
+            <p class="mt-[0.75rem] text-[0.8rem] font-medium text-neutral-900">$16</p>
+          </article>
+
+          <article>
+            <img src="./public/lava-cake.jpeg" alt="Chocolate Lava Cake" class="aspect-[4/3] w-full object-cover sm:aspect-square" />
+            <h3 class="mt-[1rem] font-['Playfair_Display',serif] text-[1rem] text-neutral-900">Chocolate Lava Cake</h3>
+            <p class="mt-[0.4rem] text-[0.75rem] leading-[1.6] text-neutral-500">Warm chocolate cake with vanilla bean ice cream.</p>
+            <p class="mt-[0.75rem] text-[0.8rem] font-medium text-neutral-900">$8</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="grid md:grid-cols-2">
+      <img src="./public/interior-wide.png" alt="Ember & Oak dining room" id="gallery" class="h-[18rem] w-full object-cover md:h-full md:min-h-[24rem]" />
+
+      <div class="flex items-center bg-[#f4f2ee] px-[1.5rem] py-[3.5rem] md:px-[3rem] lg:px-[5rem]">
+        <div class="max-w-[28rem]">
+          <p class="text-[0.7rem] tracking-[0.2em] text-neutral-600">OUR STORY</p>
+          <h2 class="mt-[1rem] font-['Playfair_Display',serif] text-[2rem] text-neutral-900">More Than a Meal</h2>
+          <p class="mt-[1.25rem] text-[0.8rem] leading-[1.8] text-neutral-500">
+            Ember &amp; Oak was born from a simple idea — that great food, good drinks, and genuine hospitality can turn an ordinary day into something special.
+          </p>
+          <p class="mt-[1rem] text-[0.8rem] leading-[1.8] text-neutral-500">
+            We're a neighborhood restaurant, built on fresh ingredients, seasonal menus, and a passion for bringing people together.
+          </p>
+          <a href="#about" class="mt-[1.75rem] inline-flex items-center gap-[0.6rem] border-b-[0.0625rem] border-neutral-900 pb-[0.15rem] text-[0.75rem] text-neutral-900">
+            Learn More
+            <svg class="h-[1rem] w-[1rem]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18m-6-6 6 6-6 6" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="relative overflow-hidden">
+      <img src="./public/chocolate.png" alt="Table setting at Ember & Oak" class="absolute inset-0 h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative mx-auto max-w-[80rem] px-[1.5rem] py-[4.5rem] text-center">
+        <p class="text-[0.7rem] tracking-[0.2em] text-white/90">MAKE A RESERVATION</p>
+        <h2 class="mt-[1rem] font-['Playfair_Display',serif] text-[2rem] text-white">Join Us at the Table</h2>
+        <p class="mt-[0.75rem] text-[0.85rem] text-white/90">Good food, great company, and unforgettable moments.</p>
+        <a href="#contact" class="mt-[1.75rem] inline-flex items-center gap-[0.75rem] bg-white px-[1.75rem] py-[0.9rem] text-[0.75rem] text-neutral-900 transition hover:bg-neutral-200">
+          Reserve a Table
+          <svg class="h-[1rem] w-[1rem]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18m-6-6 6 6-6 6" /></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="bg-[#fbfaf8]">
+    <div class="mx-auto flex max-w-[80rem] flex-col items-center gap-[1.75rem] px-[1.5rem] py-[2.5rem] lg:flex-row lg:justify-between lg:px-[3rem]">
+
+      <a href="#home" class="block text-center leading-none lg:text-left">
+        <span class="block text-[1.25rem] font-light tracking-[0.2em] text-neutral-900">EMBER &amp; OAK</span>
+        <span class="mt-[0.4rem] block text-[0.5rem] tracking-[0.25em] text-neutral-500">KITCHEN · BAR · GOOD TIMES</span>
+      </a>
+
+      <nav class="flex flex-wrap items-center justify-center gap-x-[2rem] gap-y-[0.75rem]">
+        <a href="#home" class="text-[0.7rem] text-neutral-700 hover:text-neutral-900">Home</a>
+        <a href="#menu" class="text-[0.7rem] text-neutral-700 hover:text-neutral-900">Menu</a>
+        <a href="#about" class="text-[0.7rem] text-neutral-700 hover:text-neutral-900">About</a>
+        <a href="#gallery" class="text-[0.7rem] text-neutral-700 hover:text-neutral-900">Gallery</a>
+        <a href="#contact" class="text-[0.7rem] text-neutral-700 hover:text-neutral-900">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-[1.25rem] text-neutral-800">
+        <a href="#" aria-label="Instagram"><svg class="h-[1rem] w-[1rem]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" /></svg></a>
+        <a href="#" aria-label="Facebook"><svg class="h-[1rem] w-[1rem]" fill="currentColor" viewBox="0 0 24 24"><path d="M14 8V6c0-.9.2-1.5 1.6-1.5H17V1.1C16.6 1 15.6 1 14.6 1 12 1 10 2.6 10 5.6V8H7v4h3v11h4V12h3l.5-4H14z" /></svg></a>
+        <a href="#" aria-label="X"><svg class="h-[1rem] w-[1rem]" fill="currentColor" viewBox="0 0 24 24"><path d="M18.2 2h3.3l-7.2 8.3L23 22h-6.7l-5.2-6.8L5 22H1.7l7.7-8.8L1 2h6.8l4.7 6.2L18.2 2zm-1.2 18h1.8L7 3.9H5.1L17 20z" /></svg></a>
+      </div>
+    </div>
+
+    <p class="pb-[2rem] text-center text-[0.65rem] text-neutral-500">© 2025 Ember &amp; Oak. All rights reserved.</p>
+  </footer>
+</body>
+</html>
